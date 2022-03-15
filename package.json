@@ -1,0 +1,27 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "A repo of algorithms from various sources.",
+  "main": "index.ts",
+  "dependencies": {
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts": "^0.4.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonybanters/algorithms.git"
+  },
+  "author": "tonybanters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonybanters/algorithms/issues"
+  },
+  "homepage": "https://github.com/tonybanters/algorithms#readme"
+}
