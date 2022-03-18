@@ -1,12 +1,24 @@
 
-function fib(n: number): number {
-  if (n <= 2) {
-    return 1
+const fib: Function = (() => {
+  
+  type Memo = {[key: number]: number}
+  const memo: Memo = {
+    1 : 1,
+    2 : 1
   }
-  else {
-    return fib(n-2) + fib(n-1)
+
+  const fibonacci = (n: number): number => {
+    if (n in memo) return memo[n];
+
+    if (n <= 1) {
+      return 1
+    }
+    else {
+      return memo[n] = fibonacci(n-2) + fibonacci(n-1)
+    }
   }
-}
+  return fibonacci;
+})();
 
 const evenFibSum = (n: number): number => {
   let sum = 0;
