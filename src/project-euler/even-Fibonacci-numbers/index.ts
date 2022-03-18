@@ -23,8 +23,9 @@ const fib: Function = (() => {
 const evenFibSum = (n: number): number => {
   let sum = 0;
   let temp = 1;
-  while (fib(temp) < n) {
-    const tempFib = fib(temp)
+  let tempFib = 1;
+  while (tempFib < n) {
+    tempFib = fib(temp)
     if (tempFib % 2 === 0) {
       sum += tempFib
     }
