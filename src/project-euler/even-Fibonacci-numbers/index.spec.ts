@@ -12,23 +12,24 @@ describe("evenFib", () => {
       expected: 0,
     },
     {
-      arg: 10,
-      expected: 0,
-    },
-    {
-      arg: 1000,
-      expected: 0,
-    },
-    {
       arg: 1,
       expected: 0,
     },
+    {
+      arg: 3,
+      expected: 2,
+    },
+    {
+      arg: 9,
+      expected: 10,
+    },
   ];
+
   for (const testCase of testCases) {
-    describe(`when given ${testCase.arg}`, () => {
-      it(`should return 0`, () => {
-        expect(evenFib(testCase.arg)).toBe(testCase.expected);
-      });
+    it(`When given ${testCase.arg} should return ${testCase.expected}`, () => {
+      expect(evenFib(testCase.arg)).toBe(testCase.expected);
     });
+
   };
 });
+

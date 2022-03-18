@@ -13,7 +13,7 @@
     "typescript": "^4.6.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll --verbose"
   },
   "repository": {
     "type": "git",
